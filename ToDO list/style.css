@@ -1,0 +1,143 @@
+/* Сброс общих стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #6495ed;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Основной контейнер */
+#wrapper {
+  width: 450px;
+  background-color: #000365;
+  margin: 50px auto;
+  padding: 30px 20px;
+  border-radius: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Контейнер для ввода и кнопки */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task {
+  flex: 1;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  outline: none;
+}
+
+#task:focus {
+  border-color: #f2f205;
+  box-shadow: 0 0 5px #f2f205;
+}
+
+#add {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+#add:hover {
+  background-color: darkred;
+}
+
+/* Список задач */
+ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* Стиль задачи */
+li {
+  background-color: #4444aa;
+  margin: 10px 0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1rem;
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+/* Текст задачи */
+.task-text {
+  flex: 1;
+  margin-right: 10px;
+  word-break: break-word;
+}
+
+/* Контейнер кнопок */
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+/* Кнопки редактирования и удаления */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.remove {
+  background-color: red;
+  color: white;
+}
+
+.edit {
+  background-color: blue;
+  color: white;
+}
+
+.save {
+  background-color: green;
+  color: white;
+}
+
+/* Поле редактирования */
+.edit-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
